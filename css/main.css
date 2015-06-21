@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover, a:active, a:visited, a:link{
+    text-decoration: none;
+}
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: ubuntu, sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+section{
+    padding: 70px 0;
+}
+section h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.under_line{
+    border-bottom: 3px solid #d5d5d5;
+    width: 200px;
+    margin: 0 auto;
+}
+.black{
+    border-bottom: 3px solid #000;
+    margin-bottom: 60px;
+}
+h2{
+    font-size: 37px;
+    padding-bottom: 30px;
+}
+
+
+/* Шапка ХЭДЭРА */
+.top_line{
+    z-index: 2657;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(127,127,127,0.5);
+    position: fixed;
+    left: 0px;
+    right: 0px
+
+}
+.top_line img{
+    float: left;
+}
+.top_line img{
+    width: 123px;
+    margin-top: 12px;
+}
+.top_line p{
+    float: right;
+}
+.top_line p span{
+    color: #22313F;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    font-family: ubuntu, sans-serif;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.str_wrap p span{
+    color: #22313F;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    font-family: ubuntu, sans-serif;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.top_line p>a{
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    font-size: 11px;
+    font-family: ubuntu, sans-serif;
+    font-weight: 700;
+    background-color: #c0880f;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 17px;
+    vertical-align: top;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.top_line p>a:hover{
+    opacity: 0.9;
+}
+/* END Шапка ХЭДЭРА */
+
+
+/* HEADER */
+    header{
+        background-image: url(../img/header_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        min-height: 600px;
+        padding-top: 60px;
+    }
+    header h1{
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 60px;
+        text-align: center;
+        font-size: 50px;
+        font-family: ubuntu, sans-serif;
+        font-weight: 700;
+        text-shadow: 3px 3px 18px #1b1b1b;
+        filter: Shadow(Color=#1b1b1b, Direction=235, Strength=5); /* for f.... IE 9  */
+    }
+
+
+           /* @ Форма ЗАКАЗА в HEADER @ */
+    #order_form_floor{
+        margin: 0 auto;
+        padding: 20px 5px;
+        text-align: center;
+        width: 370px;
+        margin-top: 50px;
+        -moz-border-radius: 13px;
+        -webkit-border-radius: 13px;
+        border: 5px solid #c0880f;
+        border-radius: 13px;
+        box-shadow: 1px 4px 18px #1b1b1b;
+        background: rgba(212, 212, 212, 0.8);
+    }
+    .order_form, .stock{
+        margin: 0 auto;
+        padding: 20px 5px;
+        text-align: center;
+        width: 370px;
+        margin-top: 50px;
+        -moz-border-radius: 13px;
+        -webkit-border-radius: 13px;
+        border: 5px solid #c0880f;
+        border-radius: 13px;
+        box-shadow: 1px 4px 18px #1b1b1b;
+        background: rgba(212, 212, 212, 0.8);
+    }
+    .form-control{
+        margin: 10px;
+        width: 330px;
+        height: 40px;
+    }
+    .btn{
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        line-height: 26px;
+        text-align: center;
+        font-size: 16px;
+        font-family: ubuntu, sans-serif;
+        font-weight: 700;
+        background-color: #c0880f;
+        padding: 6px 18px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 10px;
+        vertical-align: top;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    .btn:hover{
+        opacity: 0.9;
+    }
+    #success_floor strong,
+    #success strong{
+        background-color: green;
+        color: white;
+        padding: 6px 19px;
+    }
+            /* @ END Форма ЗАКАЗА в HEADER @ */
+
+            /* @ Счётчик + Акция @ */
+    .stock{
+        width: 550px;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+    .stock p{
+        font-family: ubuntu, sans-serif;
+        font-size: 19px;
+        padding: 10px;
+        font-weight: bold;
+
+    }
+    .stock h2{
+        font-size: 29px;
+        color: red;
+        font-weight: bold;
+    }
+    .clck{
+        margin: 15px 0;
+    }
+            /* @ END Счётчик + Акция @ */
+/* END HEADER */
+
+/* Section PRODUCTION  */
+#production img{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+.production_block{
+    margin: 0 10px 45px 10px;
+}
+/* END Section PRODUCTION  */
+
+/* Section BUILD  */
+#build{
+    background-image: url(../img/build_bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  /*  background: #f1f1f1;*/
+}
+#build img{
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    border-radius: 30%;
+    margin-left: 55px;
+}
+#build span{
+    text-transform: uppercase;
+    background-color: #F64747;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-family: ubuntu, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    width: 195px;
+    top: 217px;
+}
+#build p{
+    padding-top: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+/* END Section BUILD  */
+
+/* Section HOT  */
+#hot h2{
+    text-shadow: 1px 7px 8px #9d9d9d;
+}
+#hot h3{
+    padding: 10px 0 20px 0;
+}
+#hot p{
+    padding-bottom: 20px;
+}
+#hot span{
+    color: red;
+}
+strong{
+    font-size: 20px;
+    padding-left: 40px;
+}
+.hot_btn{
+    text-align: center;
+    margin-top: 27px;
+}
+.hot{
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    box-shadow: 3px 7px 10px #9d9d9d;
+}
+.mid-resize img{
+    height: 313px;
+    width: 100%;
+}
+.mid-resize{
+    display: flex;
+}
+/* END Section HOT  */
+
+/* Section Benefit  */
+#benefit span{
+    font-size: 24px;
+    padding: 15px 0 15px 20px;
+    font-weight: bold;
+
+}
+#benefit .fa{
+    font-size: 55px;
+    color: #c0880f;
+    width: 60px;
+    height: 55px;
+}
+#benefit p{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#benefit{
+    background-image: url(../img/benefit_bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END Section Benefit  */
+
+/* Section Order  */
+.order_block{
+    display: inline-block;
+    margin: 20px 40px;
+    font-size: 25px;;
+}
+.order_block_main{
+    text-align: center;
+}
+#order .fa{
+    font-size: 80px;
+    color: #9d9d9d;
+}
+/* END Section Order  */
+
+/* Section RECALL  */
+#recall{
+    background-image: url(../img/recall_bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comments{
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.fa-quote-left{
+    color: #c0880f;
+}
+/* END Section RECALL  */
+
+
+/* Section Scrolling  */
+#scrolling{
+    margin-bottom: 35px;
+}
+/* END Section scscrolling */
